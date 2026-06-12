@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HŌM — House of Mori | Luxury Café, Restaurant & Events in Silvassa</title>
+  <meta name="description" content="Nestled in Silvassa, House of Mori (HŌM) blends Japanese minimalism with Rajput warmth. Experience our architectural sanctuary of terracotta arches, butterfly roofs, and a curated nature-immersive dining experience.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts: Cormorant Garamond (Display) & DM Sans (Body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Cinematic Intro Loader -->
+  <div id="intro-loader" class="intro-loader" aria-hidden="true">
+    <div class="loader-logo-container">
+      <span class="loader-logo">HŌM</span>
+      <span class="loader-sublogo">森</span>
+    </div>
+    <!-- Blade Cut Path & Split Panels -->
+    <div class="blade-line" id="blade-line"></div>
+    <div class="loader-panel panel-left-top"></div>
+    <div class="loader-panel panel-right-bottom"></div>
+  </div>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header id="main-header" class="main-header">
+    <div class="header-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <span class="brand-text">HŌM</span>
+        <span class="brand-char">森</span>
+      </a>
+      
+      <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="toggle-line line-1"></span>
+        <span class="toggle-line line-2"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu-container">
+        <ul class="nav-list">
+          <li><a href="#story" class="nav-link" id="nav-link-story">STORY</a></li>
+          <li><a href="#menu" class="nav-link" id="nav-link-menu">MENU</a></li>
+          <li><a href="#cafe" class="nav-link" id="nav-link-cafe">CAFÉ</a></li>
+          <li><a href="#gallery" class="nav-link" id="nav-link-gallery">GALLERY</a></li>
+          <li><a href="#events" class="nav-link" id="nav-link-events">EVENTS</a></li>
+          <li><a href="#reservations" class="nav-link" id="nav-link-reserve">RESERVATIONS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#reservations" class="btn btn-outline" id="header-book-btn">RESERVE A TABLE</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-wrapper">
+        <img src="assets/hero.png" alt="House of Mori architectural facade in Silvassa" class="hero-bg-img parallax-img" id="hero-bg-image">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <span class="hero-label fade-in-up">SILVASSA, INDIA</span>
+        <h1 class="hero-title fade-in-up">HOUSE OF MORI</h1>
+        <p class="hero-subtitle fade-in-up">Where Japanese minimalism meets Rajput warmth.</p>
+        <a href="#story" class="hero-scroll-btn fade-in-up" id="hero-scroll-indicator" aria-label="Scroll to Brand Story">
+          <span class="scroll-text">EXPLORE HŌM</span>
+          <div class="scroll-line"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Marquees -->
+    <section class="marquee-section" id="marquee-banner">
+      <!-- Top Thinner Marquee: scrolls right, serif italic style, lighter opacity -->
+      <div class="marquee-wrapper marquee-top" aria-hidden="true">
+        <div class="marquee-content marquee-scroll-right">
+          <span>SILVASSA <i>·</i> EST. 2024 <i>·</i> CAFÉ <i>·</i> RESTAURANT <i>·</i> EVENTS <i>·</i> HŌM <i>·</i> 森 <i>·</i> OPEN 11AM–11PM <i>·</i> </span>
+          <span>SILVASSA <i>·</i> EST. 2024 <i>·</i> CAFÉ <i>·</i> RESTAURANT <i>·</i> EVENTS <i>·</i> HŌM <i>·</i> 森 <i>·</i> OPEN 11AM–11PM <i>·</i> </span>
+          <span>SILVASSA <i>·</i> EST. 2024 <i>·</i> CAFÉ <i>·</i> RESTAURANT <i>·</i> EVENTS <i>·</i> HŌM <i>·</i> 森 <i>·</i> OPEN 11AM–11PM <i>·</i> </span>
+          <span>SILVASSA <i>·</i> EST. 2024 <i>·</i> CAFÉ <i>·</i> RESTAURANT <i>·</i> EVENTS <i>·</i> HŌM <i>·</i> 森 <i>·</i> OPEN 11AM–11PM <i>·</i> </span>
+        </div>
+      </div>
+      
+      <!-- Bottom Primary Marquee: scrolls left, small-caps, full opacity -->
+      <div class="marquee-wrapper marquee-bottom">
+        <div class="marquee-content marquee-scroll-left">
+          <span>SILVASSA · EST. 2024 · CAFÉ · RESTAURANT · EVENTS · HŌM · 森 · OPEN 11AM–11PM · </span>
+          <span>SILVASSA · EST. 2024 · CAFÉ · RESTAURANT · EVENTS · HŌM · 森 · OPEN 11AM–11PM · </span>
+          <span>SILVASSA · EST. 2024 · CAFÉ · RESTAURANT · EVENTS · HŌM · 森 · OPEN 11AM–11PM · </span>
+          <span>SILVASSA · EST. 2024 · CAFÉ · RESTAURANT · EVENTS · HŌM · 森 · OPEN 11AM–11PM · </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section id="story" class="story-section reveal-section">
+      <div class="story-bg-wrapper">
+        <img src="assets/brick.png" alt="House of Mori handmade clay brick details" class="story-bg-img parallax-img" id="story-bg-image">
+        <div class="story-overlay"></div>
+      </div>
+      <div class="story-content-container">
+        <div class="story-card">
+          <span class="section-label">OUR PHILOSOPHY</span>
+          <h2 class="section-title">A SANCTUARY OF STONE AND FOREST</h2>
+          <div class="story-grid">
+            <div class="story-text-left">
+              <p class="lead-text">
+                The name "Mori" means forest in Japanese. HŌM is a physical manifestation of a dialogue between the woodland architectures of Japan and the historic materials of India. 
+              </p>
+              <p>
+                Built in Silvassa, our sanctuary features sweeping butterfly clay roofs, soaring exposed-brick arches, and screens fashioned from locally sourced bamboo. The design marries the spatial restraint and respect for nature of Zen minimalism with the deep, enveloping warmth and luxurious textures of Rajput architecture.
+              </p>
+            </div>
+            <div class="story-text-right">
+              <p>
+                Here, light falls through slatted bamboo in geometric patterns onto hand-pressed earthen tiles. The air smells of rain on clay, freshly ground cardamom, and toasted matcha.
+              </p>
+              <p>
+                Our culinary ethos mirrors this dialogue—incorporating high-precision Japanese techniques with the heritage-rich spices and recipes of Western India. Every plate is curated, intentional, and served with Rajput hospitality (Mehmaan Nawaazi) in an atmosphere of unhurried presence.
+              </p>
+              <div class="story-sig">
+                <span class="sig-name">HŌM · 森</span>
+                <span class="sig-title">Silvassa, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section reveal-section">
+      <div class="menu-container">
+        <div class="menu-header">
+          <span class="section-label text-terracotta">THE DISHES</span>
+          <h2 class="section-title text-cream">CURATED CULINARY DIALOGUE</h2>
+          <p class="section-subtitle">A sensory intersection of Japanese precision and Rajput heritage.</p>
+          
+          <!-- Menu Category Tabs -->
+          <div class="menu-tabs" role="tablist">
+            <button class="menu-tab active" id="tab-signatures" role="tab" aria-selected="true" aria-controls="panel-signatures">SIGNATURES</button>
+            <button class="menu-tab" id="tab-cafe" role="tab" aria-selected="false" aria-controls="panel-cafe">CAFÉ & CONFECTIONERY</button>
+            <button class="menu-tab" id="tab-beverages" role="tab" aria-selected="false" aria-controls="panel-beverages">LIBATIONS</button>
+          </div>
+        </div>
+
+        <div class="menu-layout-grid">
+          <!-- Left: Menu Items (Interactive Panels) -->
+          <div class="menu-list-wrapper">
+            <!-- Signatures Panel -->
+            <div class="menu-panel active" id="panel-signatures" role="tabpanel" aria-labelledby="tab-signatures">
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">SMOKED GOBI & BLACK SESAME TARE</h3>
+                    <span class="menu-item-price">₹650</span>
+                  </div>
+                  <p class="menu-item-desc">Coal-roasted cauliflower, black sesame tare sauce, toasted peanuts, and wild Indian sorrel.</p>
+                </div>
+              </div>
+              
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">MISO-GLAZED RAJPUT KASUNDI FISH</h3>
+                    <span class="menu-item-price">₹1,150</span>
+                  </div>
+                  <p class="menu-item-desc">Local river fish, mustard kasundi glaze, white miso paste, charred spring onion oil, and micro-wasabi.</p>
+                </div>
+              </div>
+              
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">MATCHA DUM BIRYANI WITH TRUFFLE</h3>
+                    <span class="menu-item-price">₹1,400</span>
+                  </div>
+                  <p class="menu-item-desc">Aged Basmati layered with green tea broth infusion, seasonal forest mushrooms, shaved black truffle, and saffron dust.</p>
+                </div>
+              </div>
+
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">TERRIYAKI RAJASTHANI SOOLA DEER (VENISON)</h3>
+                    <span class="menu-item-price">₹1,650</span>
+                  </div>
+                  <p class="menu-item-desc">Plant-based or sustainably farmed game, dry red chili rub, sake and mirin glaze, bamboo-leaf smoke.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Café & Confectionery Panel -->
+            <div class="menu-panel" id="panel-cafe" role="tabpanel" aria-labelledby="tab-cafe" hidden>
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">MATCHA ELADA WITH KISAR DUST</h3>
+                    <span class="menu-item-price">₹480</span>
+                  </div>
+                  <p class="menu-item-desc">Traditional steamed rice pancake filled with organic Uji matcha, fresh coconut, jaggery, and Kashmiri saffron.</p>
+                </div>
+              </div>
+
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">TERRACOTTA CHAI & HOJICHA TART</h3>
+                    <span class="menu-item-price">₹450</span>
+                  </div>
+                  <p class="menu-item-desc">Earthy hojicha tea cream filling in a crisp biscuit tart, infused with traditional masala chai spices.</p>
+                </div>
+              </div>
+
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">CARDAMOM-MATCHA POUR OVER</h3>
+                    <span class="menu-item-price">₹320</span>
+                  </div>
+                  <p class="menu-item-desc">Single-origin Indian coffee beans drip-brewed over crushed cardamom pods, finished with a float of cold-whipped matcha.</p>
+                </div>
+              </div>
+
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">BLACK FOREST YUZU BARFI</h3>
+                    <span class="menu-item-price">₹380</span>
+                  </div>
+                  <p class="menu-item-desc">Fudge barfi made of condensed milk, raw cacao, Japanese yuzu gel, and gold leaf.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Libations Panel -->
+            <div class="menu-panel" id="panel-beverages" role="tabpanel" aria-labelledby="tab-beverages" hidden>
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">THE RAJPUT NEGRONI</h3>
+                    <span class="menu-item-price">₹850</span>
+                  </div>
+                  <p class="menu-item-desc">Dry gin infused with wild rose petals, sweet vermouth, Campari, and a dash of smoke from cherry wood.</p>
+                </div>
+              </div>
+
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">BAMBOO & YUZU HIGHBALL</h3>
+                    <span class="menu-item-price">₹800</span>
+                  </div>
+                  <p class="menu-item-desc">Japanese whisky, fresh yuzu juice, bamboo leaf hydrosol, sparkling water, served in a carved bamboo tumbler.</p>
+                </div>
+              </div>
+
+              <div class="menu-item-row">
+                <div class="menu-item-info">
+                  <div class="menu-item-title-row">
+                    <h3 class="menu-item-name">FOREST WATER & GINGER GIMLET</h3>
+                    <span class="menu-item-price">₹750</span>
+                  </div>
+                  <p class="menu-item-desc">Vodka, house-distilled forest wood hydrosol, ginger juice, lime cordials, cardamom oil droplets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual Editorial Dish -->
+          <div class="menu-image-wrapper">
+            <div class="menu-image-card">
+              <img src="assets/dish.png" alt="Signature dish: Kashundi Fish glazed with Miso" class="menu-showcase-img" id="menu-showcase-image">
+              <div class="menu-image-caption">
+                <span class="caption-title">MISO-GLAZED RAJPUT KASUNDI FISH</span>
+                <span class="caption-sub">A harmony of sweet Japanese miso and heavy Indian mustard.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Café HŌM Section -->
+    <section id="cafe" class="cafe-section reveal-section tile-pattern-bg">
+      <div class="cafe-container">
+        <div class="cafe-grid">
+          <!-- Left Column: Image in Arch Frame -->
+          <div class="cafe-image-col">
+            <div class="arch-frame">
+              <img src="assets/cafe.png" alt="Cafe HŌM layout with matcha and pastries" class="cafe-img" id="cafe-flatlay-image">
+            </div>
+          </div>
+          
+          <!-- Right Column: Story and Details -->
+          <div class="cafe-content-col">
+            <span class="section-label text-terracotta">DAYTIME AT HŌM</span>
+            <h2 class="section-title text-forest">CAFÉ HŌM</h2>
+            <p class="lead-text">
+              By day, the light through our butterfly roof filters onto the hand-painted tiles of the café counter. 
+            </p>
+            <p>
+              Café HŌM is a slow-paced daytime sanctuary. It serves as a quiet meeting ground for writers, artists, and creators. We feature an exclusive selection of single-estate Indian coffees sourced from the Western Ghats and ceremonial-grade Uji matcha whisked by hand. Our confectioneries are a visual tribute to Japanese wagashi aesthetics, cooked with traditional Indian confectionery techniques.
+            </p>
+            
+            <div class="cafe-hours">
+              <div class="hours-row">
+                <span class="hours-day">EVERY DAY</span>
+                <span class="hours-time">11:00 AM — 06:00 PM</span>
+              </div>
+              <div class="hours-note">*Reservations are recommended for afternoon tea sets.</div>
+            </div>
+
+            <a href="#reservations" class="btn btn-filled" id="cafe-book-btn">BOOK AFTERNOON TEA</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section reveal-section">
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <span class="section-label">THE SPACE</span>
+          <h2 class="section-title">VISUAL TRANQUILITY</h2>
+          <p class="section-subtitle">Explore the interplay of arches, bamboo, and light at House of Mori.</p>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-masonry" id="gallery-grid">
+          <!-- Item 1 (Tall) -->
+          <div class="gallery-item item-tall">
+            <img src="assets/interior.png" alt="Light filtering through bamboo screen panels on terracotta brick arches" class="gallery-img" id="gallery-img-interior">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-item-title">ARCHES & SCREEN SHADOWS</span>
+              <span class="gallery-item-desc">Terracotta and bamboo interplay</span>
+            </div>
+          </div>
+
+          <!-- Item 2 (Wide) -->
+          <div class="gallery-item item-wide">
+            <img src="assets/hero.png" alt="Exterior facade showing butterfly roofs and modern lines" class="gallery-img" id="gallery-img-facade">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-item-title">THE BUTTERFLY CANOPY</span>
+              <span class="gallery-item-desc">Indian-heritage architectural lines</span>
+            </div>
+          </div>
+
+          <!-- Item 3 (Square) -->
+          <div class="gallery-item item-square">
+            <img src="assets/dish.png" alt="Close-up of minimalist fusion plating" class="gallery-img" id="gallery-img-dish">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-item-title">HERITAGE PLATING</span>
+              <span class="gallery-item-desc">Crafted with architectural layout</span>
+            </div>
+          </div>
+
+          <!-- Item 4 (Tall) -->
+          <div class="gallery-item item-tall">
+            <img src="assets/events.png" alt="Evening layout with warm candlelit tables" class="gallery-img" id="gallery-img-event">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-item-title">COURTYARD SOIRÉE</span>
+              <span class="gallery-item-desc">Evening candlelit gatherings</span>
+            </div>
+          </div>
+          
+          <!-- Item 5 (Square) -->
+          <div class="gallery-item item-square">
+            <img src="assets/cafe.png" alt="Matcha and pastries on textured wood table" class="gallery-img" id="gallery-img-cafe">
+            <div class="gallery-hover-overlay">
+              <span class="gallery-item-title">THE CONFECTIONERY TRAY</span>
+              <span class="gallery-item-desc">Slow afternoon sets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section reveal-section">
+      <div class="events-bg-wrapper">
+        <img src="assets/events.png" alt="Event setup at House of Mori in the evening" class="events-bg-img parallax-img" id="events-bg-image">
+        <div class="events-overlay"></div>
+      </div>
+      
+      <div class="events-content-container">
+        <div class="events-box">
+          <span class="section-label text-terracotta">EXCLUSIVE GATHERINGS</span>
+          <h2 class="section-title text-cream">SOIRÉES & FOREST RECEPTIONS</h2>
+          <p class="lead-text">
+            Under the open-air butterfly roof canopy and flanked by grand brick archways, HŌM provides an unmatched stage for bespoke events, intimate weddings, art dinners, and brand showcases.
+          </p>
+          <p>
+            Whether it is an intimate 20-person private dinner in our tea house or a 150-person cocktail reception across the terracotta courtyard, our team curates the entire culinary and spatial experience. We design bespoke menus, coordinate hand-crafted floral arrangements that complement the bamboo screens, and adjust the lighting script to capture the mystical evening glow of the Silvassa forest border.
+          </p>
+          <div class="events-details">
+            <div class="detail-tag">CAPACITY: 20 — 150 GUESTS</div>
+            <div class="detail-tag">BESPOKE INDO-JAPANESE CATERING</div>
+            <div class="detail-tag">CUSTOM LANDSCAPE ILLUMINATION</div>
+          </div>
+          <a href="#reservations" class="btn btn-outline" id="events-inquire-btn">INQUIRE ABOUT AN EVENT</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations-section reveal-section">
+      <div class="reservations-container">
+        <div class="reservations-grid">
+          <!-- Information Column -->
+          <div class="reserve-info-col">
+            <span class="section-label text-terracotta">JOIN US</span>
+            <h2 class="section-title text-cream">SEEK A TEMPORARY REFUGE</h2>
+            <p class="lead-text">
+              Due to our limited seating capacity, we advise reserving your table in advance. Experience the unhurried service of HŌM.
+            </p>
+            
+            <div class="reserve-info-list">
+              <div class="reserve-info-item">
+                <span class="info-title">HOURS OF SERVICE</span>
+                <p>Lunch: 12:00 PM — 3:00 PM</p>
+                <p>Afternoon Tea: 3:30 PM — 5:30 PM</p>
+                <p>Dinner: 7:00 PM — 11:00 PM</p>
+              </div>
+              
+              <div class="reserve-info-item">
+                <span class="info-title">CONTACT DIRECTLY</span>
+                <p>reservations@houseofmori.com</p>
+                <p>+91 (260) 299 4000</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="reserve-form-col" id="reserve-form-container">
+            <h3 class="form-heading">TABLE REQUEST</h3>
+            <p class="form-sub">Please fill in details below. Our concierge will verify availability within 2 hours.</p>
+            
+            <form class="booking-form" id="booking-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-name">FULL NAME</label>
+                  <input type="text" id="booking-name" required placeholder="Satyam Gupta">
+                </div>
+              </div>
+              
+              <div class="form-row split">
+                <div class="form-group">
+                  <label for="booking-email">EMAIL ADDRESS</label>
+                  <input type="email" id="booking-email" required placeholder="name@domain.com">
+                </div>
+                <div class="form-group">
+                  <label for="booking-phone">PHONE NUMBER</label>
+                  <input type="tel" id="booking-phone" required placeholder="+91 99999 99999">
+                </div>
+              </div>
+
+              <div class="form-row split">
+                <div class="form-group">
+                  <label for="booking-guests">GUESTS</label>
+                  <select id="booking-guests" required>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7+">7+ (Private Dining)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="booking-date">DATE</label>
+                  <input type="date" id="booking-date" required>
+                </div>
+              </div>
+
+              <div class="form-row split">
+                <div class="form-group">
+                  <label for="booking-time">SERVICE</label>
+                  <select id="booking-time" required>
+                    <option value="lunch-1200">Lunch (12:00 PM)</option>
+                    <option value="lunch-1330">Lunch (1:30 PM)</option>
+                    <option value="tea-1530">Afternoon Tea (3:30 PM)</option>
+                    <option value="dinner-1900">Dinner (7:00 PM)</option>
+                    <option value="dinner-2100">Dinner (9:00 PM)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="booking-notes">SPECIAL DIETARY NOTES</label>
+                  <input type="text" id="booking-notes" placeholder="Vegetarian, allergies, etc.">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-filled w-100" id="booking-submit-btn">REQUEST A RESERVATION</button>
+            </form>
+            
+            <!-- Toast notification message (initially hidden) -->
+            <div class="booking-success-message" id="booking-success-msg" hidden>
+              <div class="success-icon">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <h4>RESERVATION REQUEST SENT</h4>
+              <p>We are review checking table spacing for your party. A concierge will reach out to you via SMS and email shortly.</p>
+              <button class="btn btn-outline" id="booking-reset-btn">REQUEST ANOTHER TABLE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="main-footer">
+    <div class="footer-container">
+      
+      <!-- Footer Logo Area -->
+      <div class="footer-logo-col">
+        <span class="footer-logo">HŌM</span>
+        <span class="footer-kanji">森</span>
+        <p class="footer-tagline">Silvassa's Indian-heritage café, restaurant and event space blending Rajput warmth with Japanese restraint.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links-col">
+        <span class="footer-section-title">THE HOUSE</span>
+        <ul class="footer-links-list">
+          <li><a href="#story" class="footer-link">Our Story</a></li>
+          <li><a href="#menu" class="footer-link">The Menu</a></li>
+          <li><a href="#cafe" class="footer-link">Café HŌM</a></li>
+          <li><a href="#gallery" class="footer-link">The Space Gallery</a></li>
+          <li><a href="#events" class="footer-link">Private Soirées</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact-col">
+        <span class="footer-section-title">VISIT US</span>
+        <p class="footer-address">
+          Survey No. 402/1, Border Road,<br>
+          Opp. Forest Sanctuary, Silvassa,<br>
+          Dadra and Nagar Haveli, India.
+        </p>
+        <p class="footer-hours">
+          Open Daily: 11:00 AM — 11:00 PM<br>
+          Valet parking is available.
+        </p>
+      </div>
+
+      <!-- Socials / Connect -->
+      <div class="footer-social-col">
+        <span class="footer-section-title">CONNECT</span>
+        <div class="footer-social-links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            INSTAGRAM
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            FACEBOOK
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="copyright-text">&copy; 2026 House of Mori. All rights reserved.</p>
+        <p class="developer-text">Designed & Curated with unhurried care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Inertial Cursor -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+    <span class="cursor-label" id="cursor-label"></span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
